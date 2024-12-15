@@ -41,7 +41,7 @@ if ($stmt->execute()) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'numanjavedshah@gmail.com'; // Replace with your Gmail address
-        $mail->Password = 'uebu tmqy pgwu nxhl';   // Replace with your Gmail App Password
+        $mail->Password = 'abc';   // Replace with your Gmail App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
