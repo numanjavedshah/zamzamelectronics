@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+header {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Section for content with image on right */
+.content-section-left-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.content-section-left-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    border-radius: 8px;
+}
+.content-section-left-image .text {
+    flex: 1;
+    padding: 20px;
+}
+.content-section-left-image .text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ef3333;
+}
+.content-section-left-image .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .content-section-left-image, .content-section-right-image {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-section-left-image img, .content-section-right-image img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+header {
+    background: #121212;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ef3333
+}
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.service-item {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+.service-item:hover {
+    transform: translateY(-10px);
+}
+.service-item h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.service-item p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.service-item i {
+    font-size: 2rem;
+    color: #ef3333;
+}
+footer {
+    background: #121212;
+    padding: 10px;
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    .service-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}

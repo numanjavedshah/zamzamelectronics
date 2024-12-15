@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 0px;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 300px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0px 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover{
+    background-color: none;
+    color: red;
+}
+
+nav .menu-b box-icon{
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+@media (max-width:1024px){
+
+    nav .menu-b box-icon{
+        display: block;
+    }
+    nav ul{
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            background: black;
+            height: 100vh;
+            width: 100%;
+            display: block;
+            text-align: center;
+            transition: all 0.5s ease;
+    }
+
+    nav ul li{
+        margin: 40px 0px;
+    }
+
+    nav ul li a{
+        font-size: larger;
+        display: block;
+    }
+
+    #click:checked~ul{
+        left: 0%;
+        z-index: 5;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* Footer Styling */
+.professional-footer {
+    background: linear-gradient(120deg, #000000, #441515);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center; /* Ensures main sections are centered */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+/* Left Section: Logo and Social Media */
+.footer-logo-social {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers logo and icons horizontally */
+}
+
+.footer-logo {
+    max-width: 200px;
+    margin: 0 auto 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 0px;
+}
+
+.social-icon {
+    font-size: 35px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ef3333;
+}
+
+/* Middle Section: Quick Links */
+.footer-quick-links {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ef3333;
+}
+
+/* Right Section: Contact Information */
+.footer-contact {
+    flex: 1;
+    text-align: right;
+}
+
+.contact-item {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(120deg, #441515, #000000);
+    margin-top: 20px;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo-social,
+    .footer-quick-links,
+    .footer-contact {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        font-size: 16px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+}
+
